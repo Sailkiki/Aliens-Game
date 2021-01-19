@@ -3,7 +3,7 @@ import pygame
 
 from settings import Settings
 from ship import Ship
-
+import game_functions as gf
 def run_game():
     # 初始化游戏并创建一个屏幕对象
     pygame.init()
@@ -13,6 +13,7 @@ def run_game():
     pygame.display.set_caption("Alien Invasion")
     ship = Ship(screen)
     while True:
+        gf.check_events()
         screen.fill(ai_settings.bg_color)
         ship.blitme()
         # 让绘制的屏幕可见
