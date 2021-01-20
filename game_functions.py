@@ -1,5 +1,5 @@
 import sys
-import  pygame
+import pygame
 
 def check_events(ship):
     """响应按键和鼠标事件"""
